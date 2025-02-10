@@ -62,6 +62,10 @@ a {
 }
 
 @media (prefers-color-scheme: light) {
+
+    body {
+        background-color: white;
+    }
     
     h1
     {color: #cc1100;}
