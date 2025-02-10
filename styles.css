@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     margin: 0; 
+    font-family: "polymath-display", sans-serif;
+    line-height: 1.2;
 }
 
 h1{
@@ -11,20 +13,36 @@ h1{
     text-align: center;
 }
 
+h2{
+    font-weight: 700;
+    font-size: 64px;
+}
+
 nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     padding-top: 15vh;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
+    grid-template-areas: 
+    "btn pic";
 }
 
 ul {
     list-style-type: none;
+    grid-area: btn;
 }
 
 li {
     margin-bottom: 20px;
+}
+
+.fp{
+    grid-area: pic;
+    object-fit: contain;
+    width: 100%;
+    padding: 30px;
 }
 
 .contact{
@@ -64,7 +82,8 @@ li {
         background-color: black;
     }
 
-    h1{color: white;}
+    h1, h2
+    {color: white;}
 
     a {
         font-size: 64px;
@@ -94,16 +113,26 @@ li {
   h1{
     justify-content: start;
     text-align: left;
+    font-size: 24px;
   }  
   
   nav {
         justify-content: flex-start;
         align-items: flex-start;
-        padding-top: 100px;
+        padding-top: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "btn"
+        "pic";
+    }
+
+    h2{
+        font-size: 48px;
     }
 
     a {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .contact{
