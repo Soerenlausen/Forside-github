@@ -22,7 +22,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    padding-top: 15vh;
+    padding-top: 3vh;
     justify-items: center;
     align-items: center;
     grid-template-areas: 
@@ -38,10 +38,16 @@ li {
     margin-bottom: 20px;
 }
 
+a {
+    font-size: 48px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
 .fp{
     grid-area: pic;
     object-fit: contain;
-    width: 100%;
+    width: 90%;
     padding: 30px;
 }
 
@@ -57,11 +63,11 @@ li {
 
 @media (prefers-color-scheme: light) {
     
-    a {
-        font-size: 64px;
-        text-decoration: none;
+    h1
+    {color: #cc1100;}
+    
+    a, h2 {
         color: black;
-        transition: 0.5s;
     }
 
     a:hover {
@@ -82,14 +88,14 @@ li {
         background-color: black;
     }
 
-    h1, h2
+    h1
+    {color: lightgreen;}
+    
+    h2
     {color: white;}
 
     a {
-        font-size: 64px;
-        text-decoration: none;
         color: white;
-        transition: 0.5s;
     }
 
     a:hover {
@@ -133,6 +139,12 @@ li {
 
     a {
         font-size: 1.8em;
+    }
+
+    .fp{
+        padding: 0 10px;
+        margin: 30px 0 100px 0;
+        max-width: 360px;
     }
 
     .contact{
